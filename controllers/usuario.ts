@@ -105,7 +105,7 @@ export const deleteUsuario = async (req: Request, res: Response) => {
         });
     };
 
-    await usuario.update({ estado: 0 });
+    await usuario.update({ estado: false });
 
     res.json(usuario);
 }

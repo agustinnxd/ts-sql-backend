@@ -107,7 +107,7 @@ const deleteUsuario = (req, res) => __awaiter(void 0, void 0, void 0, function* 
         });
     }
     ;
-    yield usuario.update({ estado: 0 });
+    yield usuario.update({ estado: false });
     res.json(usuario);
 });
 exports.deleteUsuario = deleteUsuario;
