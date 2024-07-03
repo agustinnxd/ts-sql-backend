@@ -15,6 +15,12 @@ const Usuario = connection_1.default.define('Usuario', {
     estado: {
         type: sequelize_1.DataTypes.BOOLEAN
     },
+    password: {
+        type: sequelize_1.DataTypes.STRING
+    },
+    role: {
+        type: sequelize_1.DataTypes.STRING
+    }
 });
 exports.default = Usuario;
 //# sourceMappingURL=usuario.js.map
