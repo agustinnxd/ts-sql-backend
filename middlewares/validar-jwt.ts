@@ -14,7 +14,7 @@ const validarJWT = async (req: Request , res: Response, next: NextFunction) => {
     }
 
     try {
-        const { password } = jwt.verify(token, "Stack");
+        const { password } = jwt.verify(token, "Stack") as {password: string};
 
         const usuario = await Usuario.findOne({ where: { password: password } })
 

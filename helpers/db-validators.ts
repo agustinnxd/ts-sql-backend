@@ -3,7 +3,7 @@ import Usuario from "../models/usuario";
 export const emailExiste = async (email : String = '') => {
     const existeEmail = await Usuario.findOne({
         where: {
-            email: email
+            email: email as string
         }
     })
     if(existeEmail){
